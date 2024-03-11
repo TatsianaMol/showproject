@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Conserts</title>
+   <link rel="icon" href="images/guitar-solid.svg" type="image">
+   <link rel="stylesheet" href="style/style_main.css">
+   <link rel="stylesheet" href="style/styleconserts.css">
+   <style>
+   
+  </style>
+</head>
+<body>
+   <span class="direct_back">
+      <a href="finalproject.html" target="_self"><img class="img_arrow" src="images/arrow-left-solid.svg" width="20" height="20"></a> 
+   </span>
+
+   <div class="fon_2">
+      <ul class="container_3">
+         <a href="https://www.kvitki.by" target="_blank" style="color:inherit; text-decoration: none;" ><li class="item-3"><p class="data">01.05 cafe "Online" <br> г. Hовополоцк</p></li></a>
+         <a href="https://www.kvitki.by" target="_blank" style="color:inherit; text-decoration: none;"><li class="item-3"><p class="data">02.05 cafe "Есенин"<br> г. Минск</p></li></a>
+         <a href="https://www.kvitki.by" target="_blank" style="color:inherit; text-decoration: none;"><li class="item-3"><p class="data">03.05 bar <br> "Тим" г.Витебск</p></li></a>
+      </ul>
+   </div>
+
+   <footer>
+      <p class="footer_org" id="contacts">ОРГАНИЗАЦИЯ КОНЦЕРТА</p>
+      <div class="footer_2">
+        <div class="item_foot item_f1">
+        
+            <form  id="form" class="form_1">
+              <div class="div">
+               <label for="uname">Имя:</label>
+               <input type="text" id="uname"  name="uname" value="" placeholder="Имя"><br>
+               <span class="span"></span>    
+              </div>        
+               <div class="div">
+                 <label for="telef">Телефон:</label>
+                 <input type="tel" id="telef" value="" name="telef" placeholder="375"><br>
+                 <span class="span"></span> 
+               </div>
+               <div class="div">
+               <label for="email">Email:</label>
+               <input type="email" id="input" name="email" value="" placeholder="mmm@mail.ru"><br>
+               <span class="span"></span> 
+               </div>
+            
+               <label for="ask">Ваши пожелания:</label>
+               <textarea placeholder="Сообщение..." rows="3" cols="10" name="ask">
+               </textarea><br>
+  
+               <input type="submit" value="Отправить" class="input_btn" id="submit"> 
+
+            </form>
+        </div>
+
+      <div class="item_foot item_f2">
+         
+         <div class="item_f2-1"><a href="https://instagram.com/malogranja?igshid=NmQ5Y2ExZGE1MQ==" target="_blank"><img class="img_link" src="images/instagram.svg" alt="instagram"width="30" height="30"></a></div>
+         <div class="item_f2-1"><a href="https://vk.com/malogranja" target="_blank"><img class="img_link" src="images/vk.svg" alt="vk" width="30" height="30"></a></div>
+         <div class="item_f2-1"><a href="https://www.youtube.com/@malogranjaofficial9898" target="_blank"><img class="img_link" src="images/youtube.svg" alt="youtube" width="30" height="30"></a></div>
+         <div class="item_f2-1"><a href="https://t.me/malogranjaa" target="_blank"><img class="img_link" src="images/telegram.svg" alt="telegram" width="30" height="30"></a></div>
+
+      </div>
+      <div class="foto"> 
+         <img src="images/gallery/DSC_13091.1.png" alt="">
+         <img src="images/gallery/IMG_0341.jpg" alt="">
+         <img src="images/gallery/IMG_0352.jpg" alt="">
+         <img src="images/gallery/IMG_4919.JPG" alt="">
+         <img src="images/gallery/IMG_4930.JPG" alt="">
+         <img src="images/gallery/IMG_4931.JPG" alt="">
+         <img src="images/gallery/IMG_9005.jpg" alt="">
+         <img src="images/gallery/IMG_9397.jpg" alt="">
+         <img src="images/gallery/photo_2024-03-03_16-42-00.jpg" alt="">
+      </div>
+    </div>
+ </footer>
+
+ <script>
+           let nameInput = document.querySelector('#uname');
+         let emailInput = document.querySelector("#input");
+         let phoneInput = document.querySelector("#telef");
+         let spans = document.querySelectorAll('.span');
+      
+
+         let fields = [nameInput, emailInput, phoneInput];
+         form.addEventListener('submit', function(e){
+           
+            e.preventDefault();
+            for (let i=0; i<fields.length; i++){
+            if (fields[i].value == ""){
+               fields[i].classList.add('invalid');
+               spans[i].innerHTML = 'пожалуйста, введите информацию';
+              
+        };
+
+            fields[i].onfocus = function(){
+                  if (this.classList.contains('invalid')){
+                     console.log(spans[i])
+                     this.classList.remove('invalid');
+                     spans[i].innerHTML = '';
+                  }
+            }
+         }
+         })
+
+         
+ </script>
+
+   
+</body>
+</html>

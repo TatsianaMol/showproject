@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Music</title>
+   <link rel="icon" href="images/guitar-solid.svg" type="image">
+   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@400;700&family=Kaushan+Script&family=Lato:ital@1&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="style/style_main.css">
+   <link rel="stylesheet" href="style/stylemusic.css">
+</head>
+<body>
+
+   <span class="direct_back">
+      <a href="finalproject.html" target="_self"><img class="img_arrow" src="images/arrow-left-solid.svg" width="20" height="20"></a>
+   </span>
+
+   <div class="musicbox">
+      <div class="mitem mitem_1">
+         <img  src="images/mucix/4.png" alt="" class="musicall music_1"> 
+         <img src="images/circle-play-regular.svg" width="100" height="100" class="play_img play">
+            
+         <audio class="audio">
+            <source src="muss/perevodtatu.wav" type="audio/mpeg">
+         </audio>
+      </div>
+
+      <div class="mitem mitem_2">
+         <img src="images/mucix/2.jpg" alt="" class="musicall music_2">
+         <img src="images/circle-play-regular.svg" width="100" height="100" class="play_img play">
+         <audio class="audio">
+            <source src="muss/rozovaia-pomada_jHY9Atia.mp3" type="audio/mpeg">
+         </audio>
+      </div>
+      <div class="mitem mitem_3">
+         <img src="images/mucix/3.jpg" alt="" class="musicall music_3">
+         <img src="images/circle-play-regular.svg" width="100" height="100" class="play_img play">
+         <audio class="audio">
+            <source src="muss/Повелась (mp3cut.net).wav" type="audio/mpeg">
+         </audio>
+         
+      </div>
+      <div class="mitem mitem_4">
+         <img src="images/mucix/5.jpg" alt=""  class="musicall music_4">
+         <img src="images/circle-play-regular.svg" width="100" height="100" class="play_img play">
+         <audio class="audio">
+            <source src="muss/Сердце пополам (Mix 2) (mp3cut.net).wav" type="audio/mpeg">
+         </audio>
+      </div>
+      <div class="mitem mitem_5">
+         <img src="images/mucix/1.jpg" alt="" class="musicall music_5">
+         <img src="images/circle-play-regular.svg" width="100" height="100" class="play_img play">
+         <audio class="audio">
+            <source src="muss/Из другого города(3) (mp3cut.net).mp3" type="audio/mpeg">
+         </audio>
+      </div>
+      <div class="mitem mitem_6">
+         <img src="images/mucix/2-1.jpg" alt="" class="musicall music_6">
+         <img src="images/circle-play-regular.svg" width="100" height="100" class="play_img play">
+         <audio class="audio">
+            <source src="muss/Красный (mp3cut.net).wav" type="audio/mpeg">
+         </audio>
+      </div>
+
+   </div>
+
+   <script>
+
+
+let plays = document.querySelectorAll(".play")
+let a = document.querySelectorAll('.audio')
+let music = false;
+   for (let i=0; i<plays.length; i++){
+      plays[i].addEventListener("click", () =>{
+         if(music==true){
+            music=false;
+            a[i].pause()
+         }
+         
+         else {
+            music = true;
+            a[i].play()
+         }
+   })
+}
+      
+   </script>
+
+
+  
+
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+   
+   
+   
+</body>
+</html>
